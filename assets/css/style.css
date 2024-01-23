@@ -92,6 +92,7 @@ body{
     font-weight: 800;
     padding: 13px 46px;
     cursor: pointer;
+    transition: color .3s ease;
 }
 
 .package-contents{
@@ -203,7 +204,7 @@ input[type="range"]::-webkit-slider-thumb{
     height: 20px;
     border-radius: 20px;
     background: #CFD8EF;
-    transition: background .25s ease;
+    transition: background .3s ease;
 }
 
 .toggle-fill::after{
@@ -220,4 +221,14 @@ input[type="range"]::-webkit-slider-thumb{
 
 .toggle-input:checked ~ .toggle-fill::after{
     transform: translateX(19px);
+}
+
+/* Hover Effects */
+
+.toggle-fill:hover{
+    background: #7AEADF !important;
+}
+
+.start-trial-btn:hover{
+    color: white;
 }
