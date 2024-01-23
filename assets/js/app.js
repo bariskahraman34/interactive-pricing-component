@@ -10,7 +10,7 @@ function getValue(e){
     if(billingSelector.classList.contains('active')){
         inputValue = inputValue * 12;
         price.textContent = `$${inputValue - inputValue/4}.00`;
-        pageViews.textContent = `${(inputValue - inputValue/4) * 5}K PAGEVIEWS`;
+        pageViews.textContent = `${inputValue * 5}K PAGEVIEWS`;
     }else{
         price.textContent = `$${inputValue}.00`;
         pageViews.textContent = `${inputValue * 5}K PAGEVIEWS`;
@@ -30,6 +30,6 @@ function billingType(){
         this.classList.add('active');
         inputValue = pricingInput.value * 12;
         price.textContent = `$${inputValue - inputValue/4}.00`;
-        pageViews.textContent = `${(inputValue - inputValue/4) * 5}K PAGEVIEWS`;
+        pageViews.textContent = `${inputValue * 5}K PAGEVIEWS`;
     }
 }
