@@ -152,6 +152,10 @@ body{
     display: flex;
     flex-direction: column;
     gap: 11px;
+    padding-left: 16px;
+}
+.package-content{
+    padding-left: 16px;
 }
 
 /* Input Styling */
