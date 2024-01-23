@@ -7,18 +7,21 @@
 }
 
 body{
-    background-image: url('../img/circles.svg') , url('../img/bg.svg');
-    background-repeat: no-repeat , no-repeat;
-    background-size: 146px 145px , cover;
-    background-position: top center , top center;
+    background-image: url('../img/bg.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top center;
     background-color: #F9FAFF;
     font-family: 'Manrope', sans-serif;
     display: flex;
     justify-content: center;
+    height: 100vh;
 }
 
 .container{
     width: 540px;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Font Styling */
@@ -70,6 +73,9 @@ body{
     color: #FF8D68;
     font-size: 10px;
     font-weight: 800;
+    border-radius: 9.5px;
+    background: #FEEDE8;
+    padding: 3px 7px;
 }
 
 .package-content{
@@ -84,4 +90,92 @@ body{
     color: #BECDFF;
     font-size: 12px;
     font-weight: 800;
+    padding: 13px 46px;
+}
+
+.package-contents{
+    list-style-image: url('../img/tick.svg');
+}
+
+/* Page Styling */
+
+.card-container{
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.15);
+    padding: 40px 44px 33px 46px;
+}
+
+.header{
+    padding: 104px 0px 92px 0px;
+    background-image: url('../img/circles.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.pricing-detail{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.monthly-yearly-selector-container{
+    margin-top: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+    padding-bottom: 45px;
+    margin-right: 17px;
+}
+
+.line{
+    height: 1px;
+    border: 1px solid #ECF0FB;
+}
+
+.yearly-container{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.start-trial-container{
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.package-contents{
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+
+/* Input Styling */
+
+input[type="range"]{
+    width: 100%;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-runnable-track{
+    outline: none;
+    border-radius: 5px;
+    background: #A4F3EB;
+    height: 8px;
+}
+
+input[type="range"]::-webkit-slider-thumb{
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    background: url('../img/thumb.svg');
+    height: 100px;
+    width: 100px;
+    margin-top: -32px;
 }
