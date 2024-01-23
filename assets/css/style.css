@@ -179,3 +179,40 @@ input[type="range"]::-webkit-slider-thumb{
     width: 100px;
     margin-top: -32px;
 }
+
+/* Input type check styling */
+
+.toggle{
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+.toggle-input{
+    display: none;
+}
+.toggle-fill{
+    position: relative;
+    width: 40px;
+    height: 20px;
+    border-radius: 20px;
+    background: #CFD8EF;
+    transition: background .25s ease;
+}
+
+.toggle-fill::after{
+    content: "";
+    position: absolute;
+    top: 3.4px;
+    left: 4px;
+    height: 14px;
+    width: 14px;
+    background: #ffff;
+    border-radius: 50%;
+    transition: transform .5s;
+}
+
+.toggle-input:checked ~ .toggle-fill::after{
+    transform: translateX(19px);
+}
