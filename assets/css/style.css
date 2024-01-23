@@ -20,3 +20,68 @@ body{
 .container{
     width: 540px;
 }
+
+/* Font Styling */
+.head{
+    color: #293356;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.content{
+    color: #848EAD;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.pageviews{
+    color: #848EAD;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.pricing{
+
+    :first-child{
+        color: #293356;
+        font-size: 40px;
+        font-weight: 800;
+        letter-spacing: -1px;
+    }
+
+    :last-child{
+        color: #848EAD;
+        font-weight: 600;
+    }
+
+}
+
+.billing{
+    color: #848EAD;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.discount{
+    color: #FF8D68;
+    font-size: 10px;
+    font-weight: 800;
+}
+
+.package-content{
+    color: #848EAD;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.start-trial-btn{
+    border-radius: 20.5px;
+    background: #293356;
+    color: #BECDFF;
+    font-size: 12px;
+    font-weight: 800;
+}
