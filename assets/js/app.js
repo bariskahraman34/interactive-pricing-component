@@ -3,6 +3,7 @@ const price = document.querySelector('#price');
 const pageViews = document.querySelector('.pageviews');
 const billingSelector = document.querySelector('#month-year-selector');
 const toggleFill = document.querySelector('.toggle-fill');
+const period = document.querySelector('.period');
 
 pricingInput.addEventListener('input',(e) => getValue(e));
 
@@ -28,11 +29,13 @@ function billingType(){
         inputValue = pricingInput.value;
         price.textContent = `$${inputValue}.00`;
         pageViews.textContent = `${inputValue * 5}K PAGEVIEWS`;
+        period.innerHTML = `/ month`;
     }else{
         this.classList.add('active');
         toggleFill.style.background = "#7AEADF";
         inputValue = pricingInput.value * 12;
         price.textContent = `$${inputValue - inputValue/4}.00`;
         pageViews.textContent = `${inputValue * 5}K PAGEVIEWS`;
+        period.innerHTML = `/ year`;
     }
 }

@@ -93,6 +93,7 @@ body{
     padding: 13px 46px;
     cursor: pointer;
     transition: color .3s ease;
+    border: none;
 }
 
 .package-contents{
